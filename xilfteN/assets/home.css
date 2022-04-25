@@ -1,0 +1,452 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+    color: white;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+.header-home{
+    position: absolute;
+    z-index: 100;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1790px;
+    top: 20px;
+    left: 50px;
+}
+
+
+.header-home a{
+    display: inline-block;
+    background-color: #fe5f01;
+    color: white;
+    text-decoration: none;
+    align-self: flex-start;
+    padding: 7px 15px;
+    border-radius: 5px;
+   
+}
+.header-home a:hover{
+    background-color: #ce4e04;
+}
+
+
+
+.header-home img{
+    height: 45px;
+    width: 167px;
+
+}
+
+
+
+.main{
+    height: 785px;
+    background-image: url(/assets/home-img/wallpaper2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    text-align: center;
+  
+
+}
+
+.main-child{
+    z-index: 1;
+    display: grid;
+    justify-items: center;
+}
+
+.main span{
+    text-shadow: #000000 0.5em 0.5em 0.5em;
+    font-size: 20px;
+}
+
+
+.main h1{
+    max-width: 510px;
+
+    font-size: 45px;
+    text-shadow: #000000 0.5em 0.5em 0.5em
+
+}
+
+
+.form-emb{
+    display: grid;
+    grid-template-columns: 500px 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.form-emb input{
+    padding: 20px 10px;
+    font-size: 18px;
+     
+
+}
+
+.form-emb button{
+    background-color: #fe5f01;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    color: white;
+}
+
+.form-emb button:hover{
+    background-color: #ce4e04;
+    cursor: pointer;
+    transform: 0.5s;
+}
+
+.form-emb button:after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    margin-left: 10px;
+    background: url(/assets/icons/seta.svg);
+}
+
+
+.gradient {
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 15%,
+      rgba(0, 0, 0, 0) 30%,
+      rgba(0, 0, 0, 0.8) 95%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/*sections*/
+
+.container{
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+}
+
+
+.section{
+    background: #000000;
+    padding: 4rem 0;
+    border-top: 8px solid #222;
+   
+
+}
+.section h1{
+    font-size: 50px;
+    margin-bottom: 6px;
+}
+.section p{
+    font-size: 25px;
+}
+
+
+
+.img-tv{
+    position: relative;
+
+}
+
+.img-tv img{
+    position: relative;
+    z-index: 1; /*colocar por tras ou pela frente um elemento*/
+
+}
+
+.video-tv{
+    position: absolute;
+    left: 72px;
+    top: 79px;
+    width: 400px;
+
+}
+
+
+.down .grid > div:first-child{
+    order: 2;
+}
+
+
+.down .img-tv{
+    order: 1;
+}
+
+
+.device .video-tv{
+    width: 340px;
+    top: 45px;
+    left: 100px;
+
+}
+
+
+/*************/
+.download{
+    width: 55%;
+    height: 60px;
+    background: #000000;
+    left: 130px;
+    position: relative;
+    bottom: 110px;
+    border-radius: 10px;
+    z-index: 1;
+    border: solid 4px #222;
+
+}
+.download p{
+    left: 23px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+
+}
+
+.download img{
+    width: 50px;
+    margin: 0 auto;
+    position: relative;
+    left: 90px;
+    bottom: 39px;
+}
+
+
+.popcorn .grid > div:first-child{
+    order: 2;
+}
+
+.popcorn .img-tv{
+    order: 1;
+
+
+}
+
+
+
+
+
+
+
+/********FAQ*/
+
+.faq{
+    width: 100%;
+}
+
+.faq h1{
+    text-align: center;
+}
+.faq-list{
+    margin: 50px auto;
+    max-width: 815px;
+    font-size: 26px;
+}
+
+
+.faq-question, .faq-answer{
+    background-color: #222;
+}
+
+.faq-question{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 1px;
+}
+
+.faq-question::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(/assets/icons/close.svg) no-repeat center center;
+    transform: rotate(45deg);
+}
+
+.faq-question.active::after {
+    transform: rotate(0deg);
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  }
+  
+
+  .faq-answer > div {
+    padding: 30px;
+  }
+  
+
+.faq-answer.active{
+    max-height: 200px;
+}
+
+
+
+
+
+
+
+
+
+.footer .form-emb{
+    margin-top: 0;
+  
+}
+
+.footer{
+    background-color: black;
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+    border-top: solid 8px #222;
+    display: grid;
+    justify-items: center;
+}
+
+.footer p{
+    margin-top: 10px;
+}
+
+
+
+
+/*responsivo*/
+@media (max-width: 800px) {
+    .header-home {
+      padding:  -25px;
+    }
+  
+    .header-home img {
+      max-width: 950px;
+    }
+  
+    .header-home a {
+      font-size: 14px;
+      padding: 3px 6px;
+    }
+  
+    .main {
+      height: 500px;
+    }
+  
+    .main h1 {
+      font-size: 28px;
+    }
+  
+    .main span,
+    .main p {
+      width: 80vw;
+    }
+  
+    .main span {
+      margin-top: 16px;
+      font-size: 18px;
+    }
+  
+    .main p {
+      margin-top: 10px;
+    }
+  
+    .form-emb {
+      width: 100%;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 10px;
+      max-width: 80vw;
+    }
+  
+    .form-emb input {
+      font-size: 16px;
+      padding: 13px;
+    }
+  
+    .form-emb button {
+      font-size: 16px;
+      justify-self: center;
+      padding: 4px 16px 8px 16px;
+      border-radius: 2px;
+    }
+  
+    .form-emb button::after {
+      margin-left: 5px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: 6px 12px;
+    }
+  
+    section h1,
+    .section p {
+      text-align: center;
+    }
+  
+    section h1 {
+      font-size: 26px;
+    }
+  
+    .section p {
+      font-size: 18px;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .faq-list {
+      margin-top: 22px;
+    }
+  
+    .faq-question,
+    .faq-answer {
+      font-size: 18px;
+    }
+  
+    .faq-question {
+      padding: 16px 22px;
+    }
+  
+    .faq-question::after {
+      background-size: 15px;
+    }
+  
+    .faq-answer > div {
+      padding: 21px;
+    }
+  }
+  
