@@ -52,7 +52,7 @@ img{
 
 .main{
     height: 785px;
-    background-image: url(/assets/home-img/wallpaper2.jpeg);
+    background-image: url(/xilfteN/assets/home-img/wallpaper2.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -189,7 +189,7 @@ img{
 .video-tv{
     position: absolute;
     left: 72px;
-    top: 79px;
+    top: 85px;
     width: 400px;
 
 }
@@ -239,7 +239,7 @@ img{
     margin: 0 auto;
     position: relative;
     left: 90px;
-    bottom: 39px;
+    bottom: 35px;
 }
 
 
@@ -294,7 +294,7 @@ img{
     display: block;
     width: 20px;
     height: 20px;
-    background: url(/assets/icons/close.svg) no-repeat center center;
+    background: url(/xilfteN/assets/icons/close.svg) no-repeat center center;
     transform: rotate(45deg);
 }
 
@@ -448,5 +448,51 @@ img{
     .faq-answer > div {
       padding: 21px;
     }
+
+    .download{
+      width: 55%;
+      height: 60px;
+      background: #000000;
+      left: 120px;
+      position: relative;
+      bottom: 110px;
+      border-radius: 10px;
+      z-index: 1;
+      border: solid 4px #222;
+  
+  }
+  .download p{
+      left: 25px;
+      font-size: 20px;
+      padding-left: 15px;
+      padding-top: 15px;
+  
+  }
+  
+  .download img{
+      width: 50px;
+      margin: 0 auto;
+      position: relative;
+      left: 95px;
+      bottom: 35px;
+  }
+  
+  .video-tv{
+    position: absolute;
+    left: 72px;
+    top: 85px;
+    width: 400px;
+
+}
+
+
+
+
+
+
+
+
+
+
   }
   
